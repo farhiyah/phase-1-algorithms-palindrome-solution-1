@@ -1,6 +1,14 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const str = word.split("");
+  const strReverse = str.reverse().join("");
+  if (strReverse === word) {
+    return true;
+  } else {
+    return false;
+  }
 }
+console.log(isPalindrome("ab"));
 
 /* 
   Add your pseudocode here
